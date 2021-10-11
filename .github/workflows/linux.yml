@@ -46,6 +46,9 @@ jobs:
               run: uname -a
             - name: Perl version check
               run: perl -V
+            - name: set up Ubuntu
+              run: |
+                apt-get install ca-certificates
             - name: Install cpanm and multiple modules
               run: |
                 curl -L https://cpanmin.us | perl - App::cpanminus
