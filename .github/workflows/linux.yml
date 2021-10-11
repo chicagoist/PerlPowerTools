@@ -53,7 +53,7 @@ jobs:
             - name: Install cpanm and multiple modules
               run: |
                 curl -L https://cpanmin.us | perl - App::cpanminus
-                cpanm --notest --without-recommend IO::Socket::SSL App::Cpan ExtUtils::MakeMaker
+                cpanm --notest --without-recommend IO::Socket::SSL App::Cpan ExtUtils::MakeMaker LWP LWP::Protocol::https
             - name: Install dependencies
               run: |
                 cpan -J
