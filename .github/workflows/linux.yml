@@ -56,6 +56,7 @@ jobs:
                 cpanm --notest --without-recommend IO::Socket::SSL App::Cpan ExtUtils::MakeMaker
             - name: Install dependencies
               run: |
+                cpan -J
                 cpan -M https://www.cpan.org -T App::a2p App::find2perl MIME::Parser IPC::Run3
             - name: Run tests
               run: |
