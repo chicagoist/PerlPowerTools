@@ -30,7 +30,7 @@ jobs:
             os:
                 - ubuntu-18.04
             perl-version:
-                - '5.8'
+                - 'latest'
 
         container:
             image: perl:${{ matrix.perl-version }}
